@@ -13,14 +13,18 @@
   ```
    "ConnectionStrings": { "MusicConnection": "server=localhost;uid=root;database=music" }
   ```
-    You change the connection string name and username, password,database name according to your machine and exercise. 
+ 
+ You change the connection string name and username, password,database name according to your machine and exercise. 
     
-    - In program.cs, add the following code
+- In program.cs, add the following code
+    
     ```
     var connectionString = builder.Configuration.GetConnectionString("MusicConnection");
     builder.Services.AddDbContext<MusicContext>(options=>options.UseMySQL(connectionString));
+    
     ```
-    Make sure that, you modify the connection string name and change the DBContext name mentioned above according to your exercise/machine.
+    
+ Make sure that, you modify the connection string name and change the DBContext name mentioned above according to your exercise/machine.
     
   5. You should now be able to succcessful run the application and perform CRUD operations
     
