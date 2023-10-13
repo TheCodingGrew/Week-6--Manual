@@ -1,8 +1,14 @@
 # Week-6--Manual
 
 1. Create an ASP.NET core MVC Web app
-2. Scaffold the desired database using the scaffold command unto the Models folder
-3. Now right-click on the Controller folder and choose Add > New Scaffolded Item
+2. Install the required packages:
+   - EntityFramework
+   - EntityFrameworkCore
+   - EntityFrameworkCore.Tools
+   - Mysql.Entityframeworkcore
+4. Scaffold the desired database using the scaffold command unto the Models folder
+   - Resource: https://dev.mysql.com/doc/connector-net/en/connector-net-entityframework-core-scaffold-example.html
+6. Now right-click on the Controller folder and choose Add > New Scaffolded Item
   - Choose MVC Controller with views, using Entity Framework
   - In Model class dropdown, choose one of your Model classes
   - In the DbContext class dropdown, choose the name of the generated DBContext class. If your database name is Music, then the DbContext class name would be MusicContext
